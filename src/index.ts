@@ -16,11 +16,12 @@ function createActionType(actionPrefix: string, identity: string | number): stri
 }
 
 function getIdentity(action: any): string {
-  return (action.payload && action.payload.identity) || defaultIdentity;
+  return action.payload.identity || defaultIdentity;
 }
 
 export const webSocketMiddleware = (store: any) => (next: any) => (action: any) => {
-  const identity: string = getIdentity(action);
+  // Every dispatch trigger this middleware, may not have payload.
+  const identity: string = (action.payload && action.payload.identity) || defaultIdentity;
 
   switch (action.type) {
     case WEBSOCKET_CONNECT:
