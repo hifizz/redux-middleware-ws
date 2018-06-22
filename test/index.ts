@@ -1,4 +1,4 @@
-import { webSocketMiddleware } from '../src/redux-middleware-ws'
+import { webSocketMiddleware } from '../src/'
 
 /**
  * Dummy test
