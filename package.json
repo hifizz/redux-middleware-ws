@@ -1,6 +1,6 @@
 {
   "name": "redux-middleware-ws",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "keywords": [],
   "main": "dist/redux-middleware-ws.umd.js",
@@ -74,7 +74,6 @@
     "collectCoverage": true
   },
   "prettier": {
-    "semi": false,
     "singleQuote": true
   },
   "devDependencies": {
