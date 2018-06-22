@@ -38,7 +38,6 @@ export const webSocketMiddleware = (store: any) => (next: any) => (action: any) 
           type: createActionType(WEBSOCKET_CLOSE, identity)
         })
       }
-
       webSocketSet[identity].onmessage = (message: any) => {
         store.dispatch({
           type: createActionType(WEBSOCKET_MESSAGE, identity),
