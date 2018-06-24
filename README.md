@@ -24,3 +24,5 @@ online example:
 ### Multiple instance
 
 - [] add multiple example
+
+https://medium.com/@ianovenden/redux-websocket-integration-c1a0d22d3189

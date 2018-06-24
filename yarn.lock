@@ -3550,6 +3550,10 @@ mocha@^4.0.1:
     mkdirp "0.5.1"
     supports-color "4.4.0"
 
+mock-socket@^7.1.0:
+  version "7.1.0"
+  resolved "http://registry.npm.taobao.org/mock-socket/download/mock-socket-7.1.0.tgz#482ecccafb0f0e86b8905ba2aa57c1fe73ba262d"
+
 modify-values@^1.0.0:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/modify-values/download/modify-values-1.0.1.tgz#b3939fa605546474e3e3e3c63d64bd43b4ee6022"
