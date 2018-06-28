@@ -26,7 +26,7 @@ export const webSocketMiddleware = (store: any) => (next: any) => (action: any) 
         store.dispatch({
           type: createActionType(WEBSOCKET_OPEN, identity)
         });
-        if (action.payload.onOpen) {
+        if (action.payload.onopen) {
           action.payload.onOpen(webSocketSet[identity]);
         }
       };
@@ -34,6 +34,9 @@ export const webSocketMiddleware = (store: any) => (next: any) => (action: any) 
         store.dispatch({
           type: createActionType(WEBSOCKET_CLOSE, identity)
         });
+        if (action.payload.onclose) {
+          action.payload.onclose(webSocketSet[identity]);
+        }
       };
       webSocketSet[identity].onmessage = (message: any) => {
         store.dispatch({
